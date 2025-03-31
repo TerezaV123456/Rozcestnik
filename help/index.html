@@ -20,343 +20,370 @@
             </ul>
         </nav>
 
+        <div class="search-bar">
+        <!-- Vyhledávací pole -->
+            <input type="text" id="search" placeholder="Hledat..." onkeyup="filterBoxes()">
+            
+        <!-- Filtr podle tagů -->
+            <select id="filter" onchange="filterBoxes()">
+                <option value="all">Vše</option>
+                <option value="grafika">Grafika</option>
+                <option value="templaty">Templaty</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="obrazky">Obrázky</option>
+                <option value="ikonky">Ikonky</option>
+                <option value="cheatsheets">Cheatsheets</option>
+                <option value="ostatni">Ostatní</option>
+                <option value="gradienty">Gradienty</option>
+                <option value="barvicky">Barvičky</option>
+            </select>
+        </div>
+
     <!--Rozcestnik-->
         <section class="webs">
             <div class="boxes">
 
             <!--Box-->
-            <div class="box">
+            <div class="box" data-tags="cheatsheets">
                 <a href="https://cheatsheets.zip/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                 <a href="https://cheatsheets.zip/">CheatSheet.zip</a>
             </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="cheatsheets">
                     <a href="https://acchou.github.io/html-css-cheat-sheet/html-css-cheat-sheet.html#html"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://acchou.github.io/html-css-cheat-sheet/html-css-cheat-sheet.html#html">CheatSheet</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://github.com/TerezaV123456"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://github.com/TerezaV123456">GitHub</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="html, cheatsheets">
                     <a href="https://htmlcheatsheet.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://htmlcheatsheet.com">HTML Cheatsheet</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://picsum.photos/images"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://picsum.photos/images">Lorem Picsum</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://dashy.to"><img src="../images/dashy.png"></a> 
                     <a href="https://dashy.to">Signpost</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://xsgames.co/animatiss/?fbclid=IwZXh0bgNhZW0CMTAAAR3Ov4VYHt5VH5eBbb1l7Civv-wJaoV1LegoT6vs1Tjzp1MuVkn6SOCvDVk_aem_F8aeUtr05Ae5_WxuEy1U2w"><img src="../images/cssanimation.png"></a> 
                     <a href="https://xsgames.co/animatiss/?fbclid=IwZXh0bgNhZW0CMTAAAR3Ov4VYHt5VH5eBbb1l7Civv-wJaoV1LegoT6vs1Tjzp1MuVkn6SOCvDVk_aem_F8aeUtr05Ae5_WxuEy1U2w">CSS animations</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ikonky">
                     <a href="https://getbootstrap.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://getbootstrap.com">Bootstrap</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="templaty">
                     <a href="https://nicepage.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://nicepage.com">Nicepage</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="templaty">
                     <a href="https://uiverse.io"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://uiverse.io">UIverse</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ikonky">
                     <a href="https://fontawesome.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://fontawesome.com">FontAwesome</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://cssgrid-generator.netlify.app"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://cssgrid-generator.netlify.app">Grid generator</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ikonky">
                     <a href="https://pictogrammers.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://pictogrammers.com">Pictogrammers</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://extensions.joomla.org/extension/rspagebuilder/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://extensions.joomla.org/extension/rspagebuilder/">RSPageBuilder</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="gradienty">
                     <a href="https://www.eggradients.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.eggradients.com">Gradient</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="gradienty">
                     <a href="https://www.gradientmagic.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.gradientmagic.com">Gradientmagic</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="gradienty">
                     <a href="https://www.mshr.app"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.mshr.app">AnimatedGradient</a>
                 </div>
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.w3schools.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.w3schools.com/">W3Schools</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://unsplash.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://unsplash.com/">Unsplash</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="gradienty">
                     <a href="https://gradienty.codes/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://gradienty.codes/">Gradienty</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.wolframalpha.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.wolframalpha.com/">WolfRam Alpha</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://cssbud.com/css-generator/css-glow-generator/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://cssbud.com/css-generator/css-glow-generator/">Glow</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://9elements.github.io/fancy-border-radius/#30.30.44.30--."><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://9elements.github.io/fancy-border-radius/#30.30.44.30--.">Border radius</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://bennettfeely.com/clippy/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://bennettfeely.com/clippy/">Clippy</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://cubic-bezier.com/#.17,.67,.83,.67"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://cubic-bezier.com/#.17,.67,.83,.67">Cubic</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://codepen.io/kazemi/pen/aGXbMm"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://codepen.io/kazemi/pen/aGXbMm">Hover effects</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://flexboxlabs.netlify.app/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://flexboxlabs.netlify.app/">Flex/grid</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://www.magicpattern.design/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.magicpattern.design/">Magic Patterns</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://pages.github.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://pages.github.com/">Git Hub Pages</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://lovable.dev/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://lovable.dev/">Lovable.dev</a>
                 </div>
 
-                            <!--Box-->
-                <div class="box">
+            <!--Box-->
+                <div class="box" data-tags="ostatni">
                     <a href="https://10015.io/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://10015.io/">10015.io</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://omatsuri.app/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://omatsuri.app/">Omatsuri.app</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="gradienty">
                     <a href="https://neat.firecms.co/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://neat.firecms.co/">Gradients</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://css-loaders.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://css-loaders.com/">CSS Loaders</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://www.fffuel.co/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.fffuel.co/">Fffuel.co</a>
                 </div>
                 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://webcode.tools/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://webcode.tools/">Webcode tools</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="cheatsheets">
                     <a href="https://overapi.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://overapi.com/">OverAPI</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://www.pacdora.com/mockups"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.pacdora.com/mockups">Pacdora (MockUps)</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="barvicky">
                     <a href="https://colorspectrum.design/generator.html"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://colorspectrum.design/generator.html">Colorspectrum</a>
                 </div>
             
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.vantajs.com/?effect=net"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.vantajs.com/?effect=net">Animated backgrounds</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://undraw.co/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://undraw.co/">Undraw</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://shots.so/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://shots.so/">Shots</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.toools.design/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.toools.design/">Tools.design</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="barvicky">
                     <a href="https://colors-visualizer.vercel.app/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://colors-visualizer.vercel.app/">Colors-visualizer</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://www.phase.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.phase.com/">Phase</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://handyarrows.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://handyarrows.com/">Hadny Arrows</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://shortcuts.design/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://shortcuts.design/">Shortcuts</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ikonky">
                     <a href="https://www.isocons.app/?ref=websitehunt.co"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.isocons.app/?ref=websitehunt.co">Isocons</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://logoipsum.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://logoipsum.com/">Logoipsum</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.pacdora.com/3d-modeling"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.pacdora.com/3d-modeling">3D Modeling</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ikonky">
                     <a href="https://home.streamlinehq.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://home.streamlinehq.com/">Streamlinehq (Icons)</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="templaty">
                     <a href="https://www.navbar.gallery/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.navbar.gallery/">Navbar gallery</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="templaty">
                     <a href="https://bentogrids.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://bentogrids.com/">Bento Grids</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="obrazky">
                     <a href="https://items.design/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://items.design/">items.design</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="css">
                     <a href="https://easingwizard.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://easingwizard.com/">Easing wizard</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ikonky">
                     <a href="https://www.flaticon.com/animated-icons"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.flaticon.com/animated-icons">Animated icons</a>
+                </div>
+
+            <!--Box-->
+                <div class="box" data-tags="gradienty">
+                    <a href="https://webgradients.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
+                    <a href="https://webgradients.com/">Web gradients</a>
                 </div>
             </div>
         </section>
