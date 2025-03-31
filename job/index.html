@@ -20,6 +20,16 @@
         </ul>
     </nav>
 
+        <div class="search-bar">
+        <!-- Vyhledávací pole -->
+            <input type="text" id="search" placeholder="Hledat..." onkeyup="filterBoxes()">
+            
+        <!-- Filtr podle tagů -->
+            <select id="filter" onchange="filterBoxes()">
+                <option value="all">Vše</option>
+            </select>
+        </div>
+
 <!--Rozcestnik-->
     <section class="webs">
         <div class="boxes">

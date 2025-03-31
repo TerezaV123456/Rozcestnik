@@ -20,60 +20,72 @@
             </ul>
         </nav>
 
+            <div class="search-bar">
+            <!-- Vyhledávací pole -->
+                <input type="text" id="search" placeholder="Hledat..." onkeyup="filterBoxes()">
+                
+            <!-- Filtr podle tagů -->
+                <select id="filter" onchange="filterBoxes()">
+                    <option value="all">Vše</option>
+                    <option value="github">Github</option>
+                    <option value="ostatni">Ostatní</option>
+                </select>
+            </div>
+
 <!--Rozcestnik-->
         <section class="webs">
             <div class="boxes">
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://chatgpt.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://chatgpt.com">ChatGPT</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="github">
                     <a href="https://github.com/TerezaV123456/IKT2"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://github.com/TerezaV123456/IKT2">IKT2</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="github">
                     <a href="https://github.com/TerezaV123456/maturitn-_otazky"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://github.com/TerezaV123456/maturitn-_otazky">Maturitní otázky</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="github">
                     <a href="https://github.com/TerezaV123456/questions"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://github.com/TerezaV123456/questions">Secret</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://bakalari.sosehl.cz/login"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://bakalari.sosehl.cz/login">Bakaláři</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.sosehl.cz"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://www.sosehl.cz">SOSEHL</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://outlook.office.com/mail/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://outlook.office.com/mail/">Outlook</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://podstan.net/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://podstan.net/">Moodle</a>
                 </div>
 
                 <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://sosehl-my.sharepoint.com/personal/vavruskovat21_sosehl_onmicrosoft_com/_layouts/15/onedrive.aspx?&login_hint=VavruskovaT21@sosehl.onmicrosoft.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://sosehl-my.sharepoint.com/personal/vavruskovat21_sosehl_onmicrosoft_com/_layouts/15/onedrive.aspx?&login_hint=VavruskovaT21@sosehl.onmicrosoft.com">Onedrive</a>
                 </div>

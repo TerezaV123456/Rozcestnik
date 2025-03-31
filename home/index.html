@@ -20,143 +20,146 @@
             </ul>
         </nav>
 
+        <div class="search-bar">
+            <!-- Vyhledávací pole -->
+                <input type="text" id="search" placeholder="Hledat..." onkeyup="filterBoxes()">
+                
+            <!-- Filtr podle tagů -->
+                <select id="filter" onchange="filterBoxes()">
+                    <option value="all">Vše</option>
+                    <option value="knizky">Knížky</option>
+                    <option value="filmy">Filmy</option>
+                    <option value="ostatni">Ostatní</option>
+                </select>
+            </div>
+
 <!--Rozcestnik-->
         <section class="webs">
             <div class="boxes">
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://chatgpt.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://chatgpt.com">ChatGPT</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.youtube.com/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://www.youtube.com/">Youtube</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://calendar.google.com/calendar"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://calendar.google.com/calendar">Kalendář</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://mail.google.com/mail/u/0/#inbox"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://www.rhymezone.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://www.rhymezone.com">Rhymezone</a>
                 </div>
             
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://aternos.org/server/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://aternos.org/server/">Aternos</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="ostatni">
                     <a href="https://editor.reedsy.com/book/board/1ZRTllAjTkCHe36Y8cvY-A/Z8rVz4yGWopIdG9A/b/Z8rnRoyGWopIdG_m"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://editor.reedsy.com/book/board/1ZRTllAjTkCHe36Y8cvY-A/Z8rVz4yGWopIdG9A/b/Z8rnRoyGWopIdG_m">Reedsy</a>
                 </div>
-            </div> 
-
-            <h2>Knížky</h2>  
-                    
-            <div class="boxes">
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="knizky">
                     <a href="https://www.martinus.cz"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.martinus.cz">Martinus</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="knizky">
                     <a href="https://www.knizniklub.cz"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.knizniklub.cz">Knižní klub</a>
                 </div>
             
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="knizky">
                     <a href="https://www.knihydobrovsky.cz"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.knihydobrovsky.cz">Knihy Dobrovský</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="knizky">
                     <a href="https://z-lib.gs"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://z-lib.gs">Z-library</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="knizky">
                     <a href="https://www.goodreads.com"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.goodreads.com">GoodReads</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="knizky">
                     <a href="https://fmhy.net/readingpiracyguide#ebooks"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://fmhy.net/readingpiracyguide#ebooks">Rozpis stránek</a>
                 </div>
-            </div>
-
-            <h2>Filmy / Seriály</h2>
-
-            <div class="boxes">
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://web.netmovies.to/home/"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://web.netmovies.to/home/">Netmovies</a>
                 </div>
                     
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://vidstream.to"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://vidstream.to">Vidstream</a>
                 </div>
         
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://fastflix.to"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://fastflix.to">Fastflix</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://fastshare.cloud"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://fastshare.cloud">FastShare</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://freek.to"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://freek.to">Freek</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://watch.streamflix.one"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://watch.streamflix.one">Streamflix</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://www.cineby.app"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                     <a href="https://www.cineby.app">Cineby</a>
                 </div>
 
             <!--Box-->
-                <div class="box">
+                <div class="box" data-tags="filmy">
                     <a href="https://fmhy.pages.dev/beginners-guide#movies-shows"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a>
                     <a href="https://fmhy.pages.dev/beginners-guide#movies-shows">Rozpis stránek</a>
                 </div>
