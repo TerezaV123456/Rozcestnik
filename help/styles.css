@@ -9,64 +9,92 @@ body, html {
     padding: 0;
 }
 
-    nav {
-        width: 80px;
-        height: 100%;
-        color: white;
-        transition: width 0.3s;
-        overflow: hidden;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2vmax;
-    }
+nav a {
+    text-decoration: none;
+}
 
-    .sidebar:hover {
-        width: 200px;
-    }
+nav {
+    width: 200px;
+    height: 100%;
+    color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vmax;
+}
 
-    .nav-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        cursor: pointer;
-        transition: background 0.3s;
-        border-radius: 0px 15px 15px 0px;
-    }
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 5vh;
+    padding: 10px;
+    gap: 0.5vmax;
+    transition: 0.8s;
+    overflow: hidden; 
+}
 
-    .one {
-        background-color: #00C9ED;
-        color: #ffffff;
-    }
+.nav-item:hover {
+    width: 200px;
+}
 
-    .two {
-        background-color: #3900E5;
-        color: #ffffff;
-    }
+.nav-icon {
+    width: 50px;
+    text-align: center;
+}
 
-    .three {
-        background-color: #000D9F;
-        color: #ffffff;
-    }
+.nav-text {
+    opacity: 0;
+    transition: opacity 0.6s, width 0.8s;
+    width: 0;
+    overflow: hidden;
+    font-weight: bold;
+}
 
-    .four {
-        background-color: #000759;
-        color: #ffffff;
-    }
+.nav-item:hover .nav-text {
+    opacity: 1;
+    width: auto;
+} 
 
-    .five {
-        background-color: #000000;
-        color: #ffffff;
-    }
+.nav-item i {
+    font-size: 2rem;
+}
 
-    .nav-item i {
-        font-size: 24px;
-        margin-right: 10px;
-    }
+.nav-item span {
+    font-size: 1.3rem;
+}
 
+.one {
+    background-color: #00C9ED;
+    color: #ffffff;
+    text-decoration: none;
+}
 
+.two {
+    background-color: #3900E5;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.three {
+    background-color: #000D9F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.four {
+    background-color: #000759;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.five {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 /*SEARCH*/
 
@@ -84,7 +112,8 @@ body, html {
 }
 
 #filter {
-    height: 33px;
+    width: 100px;
+    height: 32px;
 }
 
 
@@ -98,6 +127,8 @@ body, html {
     margin: 0vmax 25vmax 1vmax 25vmax;
     padding-top: 8vh;
 }
+
+
 
 .boxes {
     display: grid;
@@ -127,13 +158,6 @@ body, html {
 /*RESPONSIVITA*/
 
 @media (min-width: 480px) and (max-width: 768px) {
-    nav {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
     .boxes {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -149,13 +173,6 @@ body, html {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    nav {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
     .boxes {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -171,13 +188,6 @@ body, html {
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    nav {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
     .boxes {
         grid-template-columns: repeat(5, 1fr);
     }

@@ -9,36 +9,98 @@ body, html {
     padding: 0;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav {
-    background: #002c5c;
-    height: 10vh;
-    padding: 0px 50px 0px 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 5vh;
+    width: 200px;
+    height: 100%;
+    color: #ffffff;
+    overflow: hidden;
     position: fixed;
-    width: 100%;
-}
-
-ul {
-    list-style: none;
     display: flex;
-    gap: 5vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vmax;
 }
 
-li a {
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 5vh;
+    padding: 10px;
+    gap: 0.5vmax;
+    transition: 0.8s;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+.nav-item:hover {
+    width: 200px;
+}
+
+.nav-icon {
+    width: 50px;
+    text-align: center;
+}
+
+.nav-text {
+    opacity: 0;
+    transition: opacity 0.4s, width 0.8s;
+    width: 0;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.nav-item:hover .nav-text {
+    opacity: 1;
+    width: auto;
+} 
+
+.nav-item i {
+    font-size: 2rem;
+}
+
+.nav-item span {
+    font-size: 1.3rem;
+}
+
+.one {
+    background-color: #00C9ED;
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.3em;
+}
+
+.two {
+    background-color: #3900E5;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.three {
+    background-color: #000D9F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.four {
+    background-color: #000759;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.five {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /*SEARCH*/
 
 .search-bar {
-    padding-top: 18vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -51,7 +113,8 @@ li a {
 }
 
 #filter {
-    height: 33px;
+    width: 100px;
+    height: 32px;
 }
 
 /*Rozcestník*/
@@ -140,13 +203,6 @@ h2 {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    nav {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
     .boxes {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -162,13 +218,6 @@ h2 {
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    nav {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
     .boxes {
         grid-template-columns: repeat(5, 1fr);
     }
