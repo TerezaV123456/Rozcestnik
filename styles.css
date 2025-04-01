@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.3vmax;
+    gap: 0.5vmax;
     align-items: center;    background-color: #262829;
     height: auto;
     border: solid 3px #ffffff;
@@ -45,6 +45,10 @@ body {
     width: 350px;
     height: 250px;
     transition: 0.4s;
+}
+
+.box i {
+    font-size: 5rem;
 }
 
 .box:hover {
