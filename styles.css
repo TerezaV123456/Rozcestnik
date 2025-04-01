@@ -18,7 +18,7 @@ body {
 /*Links box*/
 
 .box-links {
-    padding-top: 30vh;
+    padding-top: 35vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,8 +42,8 @@ body {
     height: auto;
     border: solid 3px #ffffff;
     border-radius: 15px;
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
     transition: 0.4s;
 }
 
