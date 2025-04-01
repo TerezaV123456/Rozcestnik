@@ -104,3 +104,97 @@ li a {
 .box a {
     text-decoration: none;
 }
+
+/*RESPONSIVITA*/
+
+@media (min-width: 480px) and (max-width: 768px) {
+    nav {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #search {
+        width: 300px;
+        border: solid 1px #000000;
+    }
+
+    #filter {
+        border: solid 1px #000000;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #search {
+        width: 500px;
+        border: solid 1px #000000;
+    }
+
+    #filter {
+        border: solid 1px #000000;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    nav {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #search {
+        width: 600px;
+        border: solid 1px #000000;
+    }
+
+    #filter {
+        border: solid 1px #000000;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .boxes {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    #search {
+        width: 600px;
+        border: solid 1px #000000;
+    }
+
+    #filter {
+        border: solid 1px #000000;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+    #search {
+        width: 500px;
+        border: solid 1px #000000;
+    }
+
+    #filter {
+        border: solid 1px #000000;
+    }
+}

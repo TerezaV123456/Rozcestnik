@@ -59,3 +59,26 @@ body, html {
     border-radius: 15px 15px 0px 0px;
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+    .box-links {
+        margin: 2vmax 0vmax 2vmax 0vmax;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box-links {
+        margin: 15vmax 0vmax 2vmax 0vmax;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .box-links {
+        margin: 13vmax 5vmax 2vmax 5vmax;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .box-links {
+        margin: 10vmax 10vmax 2vmax 10vmax;
+    }
+}
