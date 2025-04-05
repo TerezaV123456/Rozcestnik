@@ -96,6 +96,16 @@ nav {
     text-decoration: none;
 }
 
+#clock {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 4rem;
+}
+
 /*SEARCH*/
 
 .search-bar {
