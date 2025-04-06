@@ -14,7 +14,7 @@ nav a {
 }
 
 nav {
-    width: 200px;
+    width: 170px;
     height: 100%;
     color: #ffffff;
     overflow: hidden;
@@ -31,13 +31,13 @@ nav {
     width: 50px;
     height: 5vh;
     padding: 10px;
-    gap: 0.5vmax;
+    gap: 0.3vmax;
     transition: 0.8s;
-    overflow: hidden;   
+    overflow: hidden; 
 }
 
 .nav-item:hover {
-    width: 200px;
+    width: 170px;
 }
 
 .nav-icon {
@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-item span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .one {
@@ -73,24 +73,30 @@ nav {
 }
 
 .two {
-    background-color: #3900E5;
+    background-color: #0076e5;
     color: #ffffff;
     text-decoration: none;
 }
 
 .three {
-    background-color: #000D9F;
+    background-color: #003f88;
     color: #ffffff;
     text-decoration: none;
 }
 
 .four {
-    background-color: #000759;
+    background-color: #002280;
     color: #ffffff;
     text-decoration: none;
 }
 
 .five {
+    background-color: #000e8f;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.six {
     background-color: #000000;
     color: #ffffff;
     text-decoration: none;

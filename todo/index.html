@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/99166ee614.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script> 
+        <title>TODO</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-ul">
+                <li class="nav-list"><a href="../index.html">HOME</a></li>
+                <li class="nav-list"><a href="../home/index.html">PERSONAL</a></li>
+                <li class="nav-list"><a href="../school/index.html">SCHOOL</a></li>
+                <li class="nav-list"><a href="../job/index.html">JOB</a></li>
+                <li class="nav-list"><a href="../help/index.html">HELP</a></li>
+                <li class="nav-list"><a href="../todo/index.html">TODO</a></li>
+            </ul>
+        </nav>
+
+        <section id="clock">
+            <div class="clock"></div>
+        </section>
+
+        <section class="todo">
+            <div class="container">
+                <div class="todo-buttons">
+                    <button id="showActive">Active</button>
+                    <button id="showCompleted">Archive</button>
+                </div>
+                
+                <div class="first-row">
+                    <input type="text" id="taskInput" placeholder="Add a new task...">
+                    <button id="addTaskButton">Add Task</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
+        </section>
+    </body>
+</html>
