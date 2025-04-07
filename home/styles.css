@@ -67,37 +67,43 @@ nav {
 }
 
 .one {
-    background-color: #00C9ED;
+    background-color: #a6a9ff;
     color: #ffffff;
     text-decoration: none;
 }
 
 .two {
-    background-color: #0076e5;
+    background-color: #7573ff;
     color: #ffffff;
     text-decoration: none;
 }
 
 .three {
-    background-color: #003f88;
+    background-color: #493bff;
     color: #ffffff;
     text-decoration: none;
 }
 
 .four {
-    background-color: #002280;
+    background-color: #3214ff;
     color: #ffffff;
     text-decoration: none;
 }
 
 .five {
-    background-color: #000e8f;
+    background-color: #1e00ff;
     color: #ffffff;
     text-decoration: none;
 }
 
 .six {
-    background-color: #000000;
+    background-color: #1a01d6;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.seven {
+    background-color: #1703af;
     color: #ffffff;
     text-decoration: none;
 }
@@ -196,6 +202,18 @@ h2 {
 /*RESPONSIVITA*/
 
 @media (min-width: 480px) and (max-width: 768px) {
+    #clock {
+        padding-top: 8rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 5rem;
+        gap: 0;
+    }
+
     nav {
         justify-content: center;
         margin: 0;
@@ -218,6 +236,18 @@ h2 {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    #clock {
+        padding-top: 8rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 5rem;
+        gap: 0;
+    }
+
     .boxes {
         grid-template-columns: repeat(4, 1fr);
     }
