@@ -27,17 +27,30 @@ body {
     color: #ffffff;
 }
 
-.boxes {
+.box-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.boxes-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.21);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.86);
 }
 
 .box {
     background-color: #000000;
     font-size: 1.5rem;
-    width: 18rem;
-    height: 13rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 15px;
     border: solid 4px #ffffff;
     display: flex;
@@ -54,35 +67,28 @@ body {
 }
 
 .box i {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-.boxes a {
+.boxes-main a {
     text-decoration: none;
 }
 
-.second-row {
-    background-color: #000000;
-    font-size: 1.5rem;
-    width: 18rem;
-    height: 8rem;
+.boxes-other {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.21);
+    padding: 2rem;
     border-radius: 15px;
-    border: solid 4px #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    gap: 0.5rem;
-    transition: 0.3s;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.86);
 }
 
-.second-row:hover {
-    transform: scale(1.04);
-}
-
-.second-row i {
-    font-size: 3rem;
+.boxes-other a {
+    text-decoration: none;
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
@@ -95,7 +101,7 @@ body {
         padding-top: 18rem;
     }
 
-    .boxes {
+    .boxes-main {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -106,7 +112,7 @@ body {
         padding-top: 10rem;
     }
 
-    .boxes {
+    .boxes-main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -116,7 +122,7 @@ body {
         font-size: 3rem;
     }
 
-    .boxes {
+    .boxes-main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -126,7 +132,7 @@ body {
         font-size: 4rem;
     }
 
-    .boxes {
+    .boxes-main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -136,13 +142,13 @@ body {
         font-size: 5rem;
     }
 
-    .boxes {
+    .boxes-main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1501px) and (max-width: 1919px) {
-    .boxes {
+    .boxes-main {
         grid-template-columns: repeat(4, 1fr);
     }
 }
