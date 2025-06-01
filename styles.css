@@ -33,31 +33,27 @@ body {
 }
 
 .box-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 5rem;
 }
 
 .boxes-main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.21);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
     padding: 2rem;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.21);
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.86);
-}
-
-.box {
-    background-color: #000000;
-    font-size: 1.5rem;
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 15px;
-    border: solid 4px #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +68,7 @@ body {
 }
 
 .box i {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .boxes-main a {
