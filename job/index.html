@@ -60,6 +60,8 @@
         <!-- Filtr podle tagů -->
             <select id="filter" onchange="filterBoxes()">
                 <option value="all">Vše</option>
+                <option value="aplikace">Aplikace</option>
+                <option value="uceni">Učení</option>
             </select>
         </div>
 
@@ -68,27 +70,39 @@
         <div class="boxes">
 
         <!--Box-->
-            <div class="box">
+            <div class="box" data-tags="aplikace">
                 <a href="https://www.notion.so/alpod-group/Tereza-Vavru-kov-4cd283ed35f74b64926f564e3c5a8cca"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                 <a href="https://www.notion.so/alpod-group/Tereza-Vavru-kov-4cd283ed35f74b64926f564e3c5a8cca">Notion</a>
             </div>
 
         <!--Box-->
-            <div class="box">
+            <div class="box" data-tags="aplikace">
                 <a href="https://secure.svethostingu.cz/webmail/rc/?_task=mail&_mbox=INBOX"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                 <a href="https://secure.svethostingu.cz/webmail/rc/?_task=mail&_mbox=INBOX">Mail</a>
             </div>
             
         <!--Box-->
-            <div class="box">
+            <div class="box" data-tags="aplikace">
                 <a href="https://gitlab.priya.cz"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                 <a href="https://gitlab.priya.cz">Gitlab</a>
             </div>
 
         <!--Box-->
-            <div class="box">
+            <div class="box" data-tags="aplikace">
                 <a href="https://chat.cloud.alpodgroup.cz/alpod-group/channels/town-square"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
                 <a href="https://chat.cloud.alpodgroup.cz/alpod-group/channels/town-square">Mattermost</a>
+            </div>
+
+        <!--Box-->
+            <div class="box" data-tags="uceni">
+                <a href="https://roadmap.sh/backend"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
+                <a href="https://roadmap.sh/backend">Backend Roadmap</a>
+            </div>
+
+        <!--Box-->
+            <div class="box" data-tags="uceni">
+                <a href="https://roadmap.sh/full-stack"><img class="favicon" src="../images/icon.jpg" alt="Favicon"></a> 
+                <a href="https://roadmap.sh/full-stack">Full Stack Roadmap</a>
             </div>
         </div>
     </section>
