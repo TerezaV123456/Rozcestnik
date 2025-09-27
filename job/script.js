@@ -27,6 +27,7 @@ function updateClock() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+
     document.querySelectorAll(".box a:first-child").forEach(link => {
         const url = new URL(link.href);
         const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain=${url.hostname}`;
@@ -38,6 +39,40 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.src = "../images/icon.jpg"; // Náhradní obrázek, pokud favicon neexistuje
             };
         }
+    });
+
+    // Přidání animace kliknutí pro všechny boxy
+    document.querySelectorAll(".box").forEach(box => {
+        box.addEventListener("click", function(e) {
+            e.preventDefault();
+            
+            // Rychlé ztmavení
+            document.body.style.opacity = "0";
+            document.body.style.transition = "opacity 0.2s ease";
+            
+            // Najdi odkaz v boxu
+            const link = this.querySelector("a");
+            if (link) {
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 200);
+            }
+        });
+    });
+
+    // Přidání animace pro navigační odkazy
+    document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            
+            // Rychlé ztmavení
+            document.body.style.opacity = "0";
+            document.body.style.transition = "opacity 0.2s ease";
+            
+            setTimeout(() => {
+                window.location.href = this.href;
+            }, 200);
+        });
     });
 
     // Spuštění hodin po načtení stránky
