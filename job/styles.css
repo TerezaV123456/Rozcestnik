@@ -194,7 +194,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5vmax;
+    gap: 0.8vmax;
 }
 
 .box img {
