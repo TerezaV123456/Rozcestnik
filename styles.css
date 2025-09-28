@@ -117,7 +117,7 @@ body {
 @media (min-width: 480px) and (max-width: 768px) {
     #clock {
         font-size: 3rem;
-        margin-top: -35rem;
+        margin-top: -27rem;
     }
 
     body {
